@@ -1,0 +1,9 @@
+" vimwiki/vimwiki
+let g:vimwiki_folding='expr'
+let g:vimwiki_list = [{'path': '~/private/wikis/toscana/', 'syntax': 'markdown', 'ext': '.md'},
+            \ {'path': '~/private/wikis/private_wikis/dev', 'syntax': 'markdown', 'ext': '.md'},
+            \ {'path': '~/private/wikis/private_wikis/neurona', 'syntax': 'markdown', 'ext': '.md'},
+            \ {'path': '~/private/wikis/private_wikis/personal', 'syntax': 'markdown', 'ext': '.md'},
+            \ {'path': '~/private/wikis/private_wikis/home', 'syntax': 'markdown', 'ext': '.md'},
+            \ {'path': '~/private/wikis/private_wikis/company', 'syntax': 'markdown', 'ext': '.md'}]
+

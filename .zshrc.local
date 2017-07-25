@@ -1,0 +1,19 @@
+# Add line below to ~/.zshrc
+# test -e "${HOME}/.zshrc.local" && source "${HOME}/.zshrc.local" 
+
+# Enable Vim mode in Zsh
+set -o vi
+bindkey -v
+
+# Requires GNU Core Utils. Allows to keep colors when piping to less
+test -e "/usr/local/bin/gls" && alias ls='gls --color'
+
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+# Starts tmux by default with zsh unless embedded in IntelliJ Idea
+[ -z $TMUX  ] && ! ps -p $PPID | grep -q "IntelliJ IDEA" && { tmux has-session -t carlos && tmux attach -t carlos || tmux new-session -d -s carlos -n home; }
+
+# Enable incremental back search
+bindkey '^R' history-incremental-search-backward
+
+test -e "${HOME}/.zshalias" && source ~/.zshalias

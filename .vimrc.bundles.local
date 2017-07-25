@@ -1,0 +1,7 @@
+Bundle 'tfnico/vim-gradle'
+Bundle 'derekwyatt/vim-sbt'
+Bundle 'derekwyatt/vim-scala'
+Bundle 'vimwiki/vimwiki'
+Bundle 'blindFS/vim-taskwarrior'
+Bundle 'calendar.vim--Matsumoto'
+
