@@ -2,6 +2,8 @@
 # test -e "${HOME}/.zshrc.local" && source "${HOME}/.zshrc.local" 
 
 # Enable Vim mode in Zsh
+export EDITOR=/usr/local/bin/vim
+export VISUAL=/usr/local/bin/vim
 set -o vi
 bindkey -v
 
