@@ -8,17 +8,25 @@ fi
 #Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+brew update
+brew upgrade
+
 #################################
 # COMMENT/UNCOMMENT AS REQUIRED #
 #################################
 
 #BREW
+brew install ack
 #brew install aria2 # Download in parallel including bittorrent
 #brew install asciinema # Record animations from the terminal
 brew install coreutils # GNU core utils
+brew install moreutils
+brew install findutils
+brew install gnu-sed --with-default-names
 brew install cask # Cask
 #brew install docker
 #brew install git
+brew install gnupg
 #brew install googler # Google search API command line
 #brew install gradle
 #brew install htop # system monitoring
@@ -34,13 +42,23 @@ brew install cask # Cask
 brew install tmux
 #brew install tor
 #brew install torsocks
-brew install vim
+brew install vim --with-override-system-vi
+brew install grep
+brew install openssh
+brew install ssh-copy-id
 #brew install weechat
-brew install wget
+brew install wget --with-iri
 #brew install youtube-dl # Youtube downloader
 brew install zsh
 brew install zsh-completions
 
+# Install font tools.
+brew tap bramstein/webfonttools
+brew install sfnt2woff
+brew install sfnt2woff-zopfli
+brew install woff2
+
+brew cleanup
 
 #CASK
 
