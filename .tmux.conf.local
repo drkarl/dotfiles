@@ -9,6 +9,10 @@ set -g history-limit 30000
 set -g status-keys vi
 set -g mode-keys vi
 
+set -g mouse on
+bind-key -t vi-copy WheelUpPane scroll-up
+bind-key -t vi-copy WheelDownPane scroll-down
+
 # move status line to top
 set -g status-position top
 
