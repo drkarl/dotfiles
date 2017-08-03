@@ -8,6 +8,9 @@ cd
 git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
 
+# Install tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 # Add local configuration files
 ln -s ~/dotfiles/.tmux.conf.local ~/.tmux.conf.local
 ln -s ~/dotfiles/.vimrc.local ~/.vimrc.local
