@@ -270,6 +270,7 @@ set -g status-position top
 bind | split-window -h
 
 # List of plugins
+# See https://github.com/tmux-plugins/tpm/blob/master/docs/tpm_not_working.md
 set -g @tpm_plugins '           \
    tmux-plugins/tpm             \
    tmux-plugins/tmux-sensible   \
