@@ -71,6 +71,7 @@ extra=(
   ledger # CLI Accounting system
   pandoc # Convert between file formats
   weechat
+  mps-youtube
 )
 
 brew install "${extra[@]}"
