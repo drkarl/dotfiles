@@ -20,4 +20,4 @@ bindkey '^R' history-incremental-search-backward
 
 test -e "${HOME}/.zshalias" && source ~/.zshalias
 eval "$(hub alias -s)"
-brew switch readline 6.3.8
+#brew switch readline 6.3.8
