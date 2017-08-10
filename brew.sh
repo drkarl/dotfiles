@@ -51,6 +51,7 @@ dev=(
   httpie # http tool
   jq # JSON tool
   the_silver_searcher # ag The silver searcher
+  hub #Github CLI
 )
 
 brew install "${dev[@]}"
