@@ -36,16 +36,23 @@ basic=(
   tmux
   vim --with-override-system-vi
   grep
+  ripgrep
   openssh
   ssh-copy-id
   wget --with-iri
   zsh
   zsh-completions
+  socat
+  python
+  lsd
+  powerline
+  jabba
 )
 
 brew install "${basic[@]}"
 
 dev=(
+  alacrity
   docker
   gradle
   httpie # http tool

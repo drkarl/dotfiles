@@ -156,7 +156,8 @@ tmux_conf_theme_right_separator_sub=''  #   powerlinesymbols.otf font
 #     - #{username}
 #     - #{username_ssh}
 #tmux_conf_theme_status_left=' ❐ #S | ↑#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} '
-tmux_conf_theme_status_left='  #S | ⬆#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} '
+#tmux_conf_theme_status_left='  #S | ⬆#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} '
+tmux_conf_theme_status_left='   #S | ⬆#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} '
 tmux_conf_theme_status_right='#{prefix}#{pairing} #{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %R , %d %b | #{username}#{root} | #{hostname} '
 
 # status left style
@@ -271,15 +272,15 @@ bind | split-window -h
 
 # List of plugins
 # See https://github.com/tmux-plugins/tpm/blob/master/docs/tpm_not_working.md
-set -g @tpm_plugins '           \
-   tmux-plugins/tpm             \
-   tmux-plugins/tmux-sensible   \
-   tmux-plugins/tmux-resurrect  \
-   tmux-plugins/tmux-continuum  \
-'
+#set -g @tpm_plugins '           \
+#   tmux-plugins/tpm             \
+#   tmux-plugins/tmux-sensible   \
+#   tmux-plugins/tmux-resurrect  \
+#   tmux-plugins/tmux-continuum  \
+#'
 
-set -g @continuum-boot 'on'
+#set -g @continuum-boot 'on'
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
-run '~/.tmux/plugins/tpm/tpm'
+#run '~/.tmux/plugins/tpm/tpm'
 
